@@ -2,7 +2,7 @@ require 'byebug'
 
 module ToyRobotSimulator
   class Coordinates
-    ATTRS = [:x, :y, :direction]
+    ATTRS = [:x, :y, :direction].freeze
     attr_accessor(*ATTRS)
 
     def initialize x, y, direction
